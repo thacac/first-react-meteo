@@ -1,2 +1,2 @@
-# react
+# first-react-meteo
 react tries
