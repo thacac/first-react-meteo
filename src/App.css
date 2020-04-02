@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-size: 10px;
 }
 
 .App-logo {
@@ -15,7 +16,19 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  /* min-height: 50vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 50px 30px;
+}
+
+.App-main {
+  background-color: #92a3c5;
+  /* min-height: 30vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +48,101 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.logo {
+  width: 150px;
+}
+
+@keyframes myImageZoom {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(0.8);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  90% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+.synth {
+  align-items: center;
+  flex-wrap: wrap;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  font-size: 0.8em;
+}
+.villeSynth {
+  text-align: left;
+}
+.tempSynth {
+  text-align: space-between;
+  font-size: 1.5em;
+}
+.tempSynthIcon {
+  /* font-size: 6em; */
+  transform: scale(1.8);
+  transition: all 1s ease 0.5;
+}
+.tempSyntNnbr {
+  font-size: 3em;
+}
+
+.min,.max{
+  font-size: 0.6em;
+}
+.min {
+  color: #61dafb;
+
+}
+.max {
+  color: #d83f47;
+}
+.tempUnit {
+  font-size: 4em;
+}
+.previsions {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px;
+}
+
+.prevSynth{
+  display: flex;
+  flex-direction: row;
+}
+
+.weatherDesc{
+  font-size: 0.7em;
+  color: #282c34;
+  text-transform: capitalize;
+}
+
+.prevision {
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 10px 5px;
+  padding: 20px;
+  min-height: 150px;
+}
+
+.prevision > .weatherIcon {
+  font-size: 5em;
+  margin: 10px 0;
+}
+
+footer {
+  font-size: 1.8em;
 }
